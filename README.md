@@ -19,8 +19,13 @@ Apunta a los dueños de las mascotas (entre 20-80 años), residentes en zonas ur
 
 ## Sitios de referencia
 | 1 | [Mascotas Ya!](tienda.mascotasya.com)| Me gustó la interfaz.|
+
 | 2 | [Puppis](puppis.com.ar) | Rozando el número 1, muy completa y buena referencia de UX|
+
 | 3 | [Dudi Mascotas](dudimascotas.com.ar) | Claro ejemplo de nicho específico.|
+
 | 4 | [Timberline] (timberline.com.ar) | Ejemplo de catálogo completo.|
+
 | 5 | [Tienda de Mascotas](tiendademascotas.com.ar) | Me gustó para ver cómo manejan el carrito y los filtros.|
+
 
