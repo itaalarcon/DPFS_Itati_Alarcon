@@ -1,5 +1,10 @@
+
 Home
+
 Detalle de producto
+
 Carrito de compras
+
 Formulario de registro
+
 Formulario de login
