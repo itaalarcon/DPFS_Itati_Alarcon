@@ -8,9 +8,7 @@ Naranja principal: #FEA82F  //
 
 ## 2. Interacción
 
-Azul hover: #1A8ED9  //  
-Verde (éxito): #34D090  //  
-Naranja hover: #FE912C  // 
+Azul hover: #1A8ED9  //  Verde (éxito): #34D090  //  Naranja hover: #FE912C  // 
 
 ## 3. Base
 
