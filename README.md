@@ -13,7 +13,7 @@ Soy **Itatí Alarcón**, estudiante de Desarrollo Full Stack en Digital House. E
 **Huellitas** es un e-commerce que ofrece una amplia variedad de artículos para el cuidado y bienestar de perros, gatos y otros animales domésticos. El catálogo incluye alimentos, juguetes, accesorios, productos de higiene.
 
 ## Público Objetivo
-Apunta a los dueños de las mascotas (entre 20-80 años), residentes en zonas urbanas que buscan una experiencia de compra cómoda, rápida y confiable desde sus teléfonos/computadoras. Es especial para personas que consideran a las mascotas como un miembro más de la familia y están dispuestas a invertir en ellas.
+Apunta a los dueños de las mascotas (entre 20-80 años), residentes en zonas urbanas que buscan una experiencia de compra cómoda, rápida y confiable desde sus teléfonos/computadoras. La idea es que la interfaz sea sencilla, accesible al uso, por eso el amplio rango de edades. Además, considero que es especial para personas que consideran a las mascotas como un miembro más de la familia y están dispuestas a invertir en ellas.
 
 -----------
 
