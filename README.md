@@ -29,3 +29,8 @@ Apunta a los dueños de las mascotas (entre 20-80 años), residentes en zonas ur
 | 5 | [Tienda de Mascotas](https://www.tiendademascotas.com.ar/) | Me gustó para ver cómo manejan el carrito y los filtros.|
 
 
+----------
+# Sprint 2- Link Trello
+
+[Ver tablero en Trello](https://trello.com/invite/b/69fa45830cd8f4933f996959/ATTI192ac8dda5dce207d645f9aa24f5e55192399674/huellitas-sprint-2)
+
