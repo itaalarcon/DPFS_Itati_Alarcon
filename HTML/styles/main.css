@@ -1,0 +1,16 @@
+:root {
+  --azul:          #1A53A1;
+  --azul-hover:    #1A8ED9;
+  --turquesa:      #3DC0C1;
+  --naranja:       #FEA82F;
+  --naranja-hover: #FE912C;
+  --verde:         #34D090;
+  --texto:         #0C3C82;
+  --fondo:         #FBFBFB;
+  --fondo-gris:    #F4F4F4;
+  --fondo-sec:     #ECECEC;
+  --gris:          #666666;
+  --gris-texto:    #888888;
+  --borde:         #e0e0e0;
+  --gris-borde:    #CCCCCC;
+}
