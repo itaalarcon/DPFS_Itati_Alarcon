@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <!-- Header -->
-     <header>   
+    <header>
         <div class="top-bar">
             <div class="top-bar-slide">🚚 Envío gratis en compras mayores a $80.000</div>
             <div class="top-bar-slide">🐾 ¡Nuevos productos todas las semanas!</div>
@@ -21,82 +22,246 @@
 
         <nav class="navbar">
             <div class="navbar-inner">
-            <a href="index.html"><img src="fotos/logo.png" alt="PetShop" height="40"></a>
-            <div class="nav-search">
-                <input type="text" placeholder="Buscar productos, marcas..." />
-                <button>🔍</button>
-            </div>
-            <div class="nav-actions">
-                <div class="nav-user">
-                <button class="nav-user-btn">
-                    <i class="fa-regular fa-user"></i>
-                </button>
-                <div class="nav-dropdown">
-                    <a href="views/register.html">Registrarse</a>
-                    <a href="views/login.html">Ingresar</a>
+                <a href="index.html"><img src="fotos/logo.png" alt="PetShop" height="40"></a>
+                <div class="nav-search">
+                    <input type="text" placeholder="Buscar productos, marcas..." />
+                    <button>🔍</button>
                 </div>
+                <div class="nav-actions">
+                    <div class="nav-user">
+                        <button class="nav-user-btn">
+                            <i class="fa-regular fa-user"></i>
+                        </button>
+                        <div class="nav-dropdown">
+                            <a href="views/register.html">Registrarse</a>
+                            <a href="views/login.html">Ingresar</a>
+                        </div>
+                    </div>
+                    <button class="nav-cart" onclick="abrirCarrito()">
+                        🛒 Carrito <span class="cart-badge">2</span>
+                    </button>
                 </div>
-                <button class="nav-cart" onclick="abrirCarrito()">
-                🛒 Carrito <span class="cart-badge">2</span>
-                </button>
-            </div>
             </div>
         </nav>
-     </header>
-       
-     <main>
+    </header>
 
+    <main>
+        <section class="carousel">
+            <div class="carousel-inner">
+                <input type="radio" name="slide" id="s1" checked hidden>
+                <input type="radio" name="slide" id="s2" hidden>
+                <input type="radio" name="slide" id="s3" hidden>
+                <div class="carousel-slide">
+                    <img src="fotos/banner1.png" alt="Banner 1" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="fotos/banner2.png" alt="Banner 2" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="fotos/banner3.jpg" alt="Banner 3" />
+                </div>
+                <div class="carousel-nav prev-btns">
+                    <label for="s3" class="carousel-btn">&#9664;</label>
+                    <label for="s3" class="carousel-btn">&#9664;</label>
+                    <label for="s2" class="carousel-btn">&#9664;</label>
+                </div>
+                <div class="carousel-nav next-btns">
+                    <label for="s2" class="carousel-btn">&#9654;</label>
+                    <label for="s3" class="carousel-btn">&#9654;</label>
+                    <label for="s1" class="carousel-btn">&#9654;</label>
+                </div>
+                <div class="carousel-dots">
+                    <label for="s1" class="dot"></label>
+                    <label for="s2" class="dot"></label>
+                    <label for="s3" class="dot"></label>
+                </div>
+            </div>
+        </section>
 
+        <section class="categorias" id="categorias">
+            <div class="section-inner">
+                <h2 class="section-title">Categorías</h2>
+                <div class="cat-grid">
+                    <div class="cat-card">
+                        <img src="fotos/perro.png" alt="Perros" class="cat-icon-img">
+                        <span>Perros</span>
+                    </div>
+                    <div class="cat-card">
+                        <img src="fotos/gato.png" alt="Gatos" class="cat-icon-img">
+                        <span>Gatos</span>
+                    </div>
+                    <div class="cat-card">
+                        <img src="fotos/hamster.png" alt="Roedores" class="cat-icon-img">
+                        <span>Roedores</span>
+                    </div>
+                    <div class="cat-card">
+                        <img src="fotos/pez.png" alt="Peces" class="cat-icon-img">
+                        <span>Peces</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="productos" id="ofertas">
+            <div class="section-inner">
+                <h2 class="section-title">Ofertas destacadas</h2>
+                <div class="productos-grid">
 
-     </main>
+                    <div class="prod-card">
+                        <div class="prod-img">img<span class="prod-badge">-20%</span></div>
+                        <div class="prod-info">
+                            <span class="prod-brand">Pedigree</span>
+                            <span class="prod-name">Snack dental para perros medianos</span>
+                            <span class="prod-stars">★★★★★</span>
+                            <div>
+                                <span class="prod-precio-old">$4.000</span>
+                                <span class="prod-precio">$3.200</span>
+                            </div>
+                        </div>
+                        <div class="prod-actions">
+                            <a href="views/DetalleProducto.html" class="btn btn-azul">Ver más</a>
+                            <button class="btn btn-primary">🛒</button>
+                        </div>
+                    </div>
 
-     <footer class="footer">
+                    <div class="prod-card">
+                        <div class="prod-img">img</div>
+                        <div class="prod-info">
+                            <span class="prod-brand">Whiskas</span>
+                            <span class="prod-name">Alimento para gatos adultos sabor pescado</span>
+                            <span class="prod-stars">★★★★☆</span>
+                            <span class="prod-precio">$4.200</span>
+                        </div>
+                        <div class="prod-actions">
+                            <a href="views/DetalleProducto.html" class="btn btn-azul">Ver más</a>
+                            <button class="btn btn-primary">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="prod-card">
+                        <div class="prod-img">img<span class="prod-badge">Nuevo</span></div>
+                        <div class="prod-info">
+                            <span class="prod-brand">Kong</span>
+                            <span class="prod-name">Juguete interactivo para perros grandes</span>
+                            <span class="prod-stars">★★★★★</span>
+                            <span class="prod-precio">$6.500</span>
+                        </div>
+                        <div class="prod-actions">
+                            <a href="views/DetalleProducto.html" class="btn btn-azul">Ver más</a>
+                            <button class="btn btn-primary">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="prod-card">
+                        <div class="prod-img">img</div>
+                        <div class="prod-info">
+                            <span class="prod-brand">Petys</span>
+                            <span class="prod-name">Shampoo antipulgas para perros y gatos</span>
+                            <span class="prod-stars">★★★★☆</span>
+                            <div>
+                                <span class="prod-precio-old">$3.500</span>
+                                <span class="prod-precio">$2.800</span>
+                            </div>
+                        </div>
+                        <div class="prod-actions">
+                            <a href="views/DetalleProducto.html" class="btn btn-azul">Ver más</a>
+                            <button class="btn btn-primary">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="prod-card">
+                        <div class="prod-img">img</div>
+                        <div class="prod-info">
+                            <span class="prod-brand">CasaMascota</span>
+                            <span class="prod-name">Cama acolchada para perros pequeños</span>
+                            <span class="prod-stars">★★★☆☆</span>
+                            <span class="prod-precio">$9.900</span>
+                        </div>
+                        <div class="prod-actions">
+                            <a href="views/DetalleProducto.html" class="btn btn-azul">Ver más</a>
+                            <button class="btn btn-primary">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="prod-card">
+                        <div class="prod-img">img<span class="prod-badge">-15%</span></div>
+                        <div class="prod-info">
+                            <span class="prod-brand">Royal Canin</span>
+                            <span class="prod-name">Alimento balanceado para cachorros</span>
+                            <span class="prod-stars">★★★★★</span>
+                            <div>
+                                <span class="prod-precio-old">$18.000</span>
+                                <span class="prod-precio">$15.300</span>
+                            </div>
+                        </div>
+                        <div class="prod-actions">
+                            <a href="views/DetalleProducto.html" class="btn btn-azul">Ver más</a>
+                            <button class="btn btn-primary">🛒</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-inner">
+                <p class="newsletter-texto">Completá tus datos y recibí un cupón en tu primera compra!</p>
+                <form class="newsletter-form" onsubmit="return false">
+                    <input type="text" placeholder="Nombre y apellido" />
+                    <input type="email" placeholder="Correo" />
+                    <button class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="footer-inner">
-        <div class="footer-top">
-            <div class="footer-logo">Hue<span>llitas</span>
-            </div>
-            <div class="footer-social">
-            <div class="social-btn"> <a href="#">f</a>
-            </div>
-                <div class="social-btn"> <a href="#">in</a> 
+            <div class="footer-top">
+                <div class="footer-logo">Hue<span>llitas</span>
                 </div>
+                <div class="footer-social">
+                    <div class="social-btn"> <a href="#">f</a>
+                    </div>
+                    <div class="social-btn"> <a href="#">in</a>
+                    </div>
 
-                <div class="social-btn"> <a href="#">ig</a> 
+                    <div class="social-btn"> <a href="#">ig</a>
+                    </div>
                 </div>
             </div>
-      </div>
-      <div class="footer-cols">
-        <div class="footer-col">
-          <h4>Sobre nosotros</h4>
-          <ul>
-            <li><a href="#">Nuestra historia</a></li>
-            <li><a href="#">Proveedores</a></li>
-            <li><a href="#">Sucursales</a></li>
-          </ul>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h4>Sobre nosotros</h4>
+                    <ul>
+                        <li><a href="#">Nuestra historia</a></li>
+                        <li><a href="#">Proveedores</a></li>
+                        <li><a href="#">Sucursales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Teléfono</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Métodos de pago</h4>
+                    <div class="footer-pagos">
+                        <img src="fotos/visa.webp" alt="Visa" class="pago-img">
+                        <img src="fotos/master.svg" alt="Mastercard" class="pago-img">
+                        <img src="fotos/american.png" alt="American Express" class="pago-img">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <ul>
-            <li><a href="#">Email</a></li>
-            <li><a href="#">Teléfono</a></li>
-            <li><a href="#">WhatsApp</a></li>
-          </ul>
+        <div class="footer-bottom">
+            <p>© 2026 Huellitas — todos los derechos reservados</p>
         </div>
-        <div class="footer-col">
-          <h4>Métodos de pago</h4>
-          <div class="footer-pagos">
-            <img src="fotos/visa.webp" alt="Visa" class="pago-img">
-            <img src="fotos/master.svg" alt="Mastercard" class="pago-img">
-            <img src="fotos/american.png" alt="American Express" class="pago-img">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 Huellitas — todos los derechos reservados</p>
-    </div>
-  </footer>
+    </footer>
 
 </body>
+
 </html>
