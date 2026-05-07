@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +45,60 @@
             </div>
         </nav>
     </header>
-
+    <div class="drawer-overlay" id="overlay" onclick="cerrarCarrito()"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="drawer-header">
+            <h3>🛒 Mi carrito</h3>
+            <button class="drawer-close" onclick="cerrarCarrito()">✕</button>
+        </div>
+        <div class="drawer-items">
+            <div class="drawer-item">
+                <div class="drawer-item-img">🦴</div>
+                <div class="drawer-item-info">
+                    <h4>Snack dental para perros</h4>
+                    <p>Pedigree · 200g</p>
+                    <div class="drawer-item-ctrl">
+                        <button>−</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="drawer-item-side">
+                    <span class="drawer-item-precio">$3.200</span>
+                    <button class="drawer-remove">Eliminar</button>
+                </div>
+            </div>
+            <div class="drawer-item">
+                <div class="drawer-item-img">🐟</div>
+                <div class="drawer-item-info">
+                    <h4>Alimento para gatos adultos</h4>
+                    <p>Whiskas · 1kg</p>
+                    <div class="drawer-item-ctrl">
+                        <button>−</button>
+                        <span>2</span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="drawer-item-side">
+                    <span class="drawer-item-precio">$8.400</span>
+                    <button class="drawer-remove">Eliminar</button>
+                </div>
+            </div>
+        </div>
+        <div class="drawer-footer">
+            <div class="drawer-resumen">
+                <div class="resumen-row">
+                    <span>Subtotal</span>
+                    <span>$11.600</span>
+                </div>
+                <div class="resumen-row"> <span>Envío</span><span class="texto-gratis"> Gratis </span> </div>
+                <div class="resumen-row total"><span>Total</span><span>$11.600</span></div>
+            </div>
+            <a href="views/carrito.html" class="btn btn-primary btn-full"> Finalizar compra </a>
+            <p class="drawer-seguir" onclick="cerrarCarrito()">Seguir comprando</p>
+        </div>
+    </aside>
+    
     <main>
         <section class="carousel">
             <div class="carousel-inner">
