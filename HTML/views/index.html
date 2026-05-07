@@ -26,7 +26,19 @@
         <input type="text" placeholder="Buscar productos, marcas..." />
         <button>🔍</button>
       </div>
-      
+      <div class="nav-actions">
+        <div class="nav-user">
+          <button class="nav-user-btn">
+            <i class="fa-regular fa-user"></i>
+          </button>
+          <div class="nav-dropdown">
+            <a href="views/register.html">Registrarse</a>
+            <a href="views/login.html">Ingresar</a>
+          </div>
+        </div>
+        <button class="nav-cart" onclick="abrirCarrito()">
+          🛒 Carrito <span class="cart-badge">2</span>
+        </button>
       </div>
     </div>
   </nav>
