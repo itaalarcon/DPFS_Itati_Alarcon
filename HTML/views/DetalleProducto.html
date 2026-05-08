@@ -15,12 +15,9 @@
 </head>
 
 <body>
-
-
-    <header>
-
         <header>
             <div class="top-bar">
+                <div class="top-bar-slide">🚚 Envío gratis en compras mayores a $80.000</div>
                 <div class="top-bar-slide">🐾 ¡Nuevos productos todas las semanas!</div>
             </div>
 
@@ -48,168 +45,202 @@
                 </div>
             </nav>
         </header>
-    </header>
 
-
-
-    <main>
-        <section class="detalle">
-            <div class="detalle-inner">
-                <div class="detalle-imgs">
-                    <div class="img-principal">🦴</div>
-                    <div class="img-thumbs">
-                        <div class="thumb active">🦴</div>
-                        <div class="thumb">📦</div>
-                        <div class="thumb">🐶</div>
-                        <div class="thumb">📋</div>
-                    </div>
-                </div>
-
-                <div class="detalle-info">
-                    <span class="detalle-marca">Pedigree</span>
-                    <h1 class="detalle-nombre">Snack dental para perros medianos</h1>
-                    <div class="detalle-stars">★★★★★ <span>(128 reseñas)</span></div>
-                    <div class="detalle-precio">
-                        <span class="precio-actual">$3.200</span>
-                        <span class="precio-viejo">$4.000</span>
-                        <span class="precio-desc">-20%</span>
-                    </div>
-                    <p class="detalle-desc">
-                        Los snacks dentales Pedigree están especialmente formulados para reducir la acumulación de
-                        sarro. Con forma especial para limpiar entre los dientes. Ideales para perros de razas medianas
-                        (10–25 kg).
-                    </p>
-                    <div>
-                        <p class="cantidad-label">Cantidad</p>
-                        <div class="cantidad-ctrl">
+        <div class="drawer-overlay" id="overlay" onclick="cerrarCarrito()"></div>
+        <aside class="cart-drawer" id="cartDrawer">
+            <div class="drawer-header">
+                <h3>🛒 Mi carrito</h3>
+                <button class="drawer-close" onclick="cerrarCarrito()">✕</button>
+            </div>
+            <div class="drawer-items">
+                <div class="drawer-item">
+                    <div class="drawer-item-img">🦴</div>
+                    <div class="drawer-item-info">
+                        <h4>Snack dental para perros</h4>
+                        <p>Pedigree · 200g</p>
+                        <div class="drawer-item-ctrl">
                             <button>−</button>
-                            <input type="number" value="1" min="1" />
+                            <span>1</span>
                             <button>+</button>
                         </div>
                     </div>
-                    <div class="detalle-btns">
-                        <button class="btn btn-primary">🛒 Agregar al carrito</button>
-                        <a href="carrito.html" class="btn btn-azul">Comprar ahora</a>
-                    </div>
-                    <div class="detalle-beneficios">
-                        <span>✅ Stock disponible</span>
-                        <span>🚚 Envío gratis a todo el país</span>
-                        <span>🔄 Devolución sin cargo en 30 días</span>
-                        <span>🔒 Compra 100% segura</span>
+                    <div class="drawer-item-side">
+                        <span class="drawer-item-precio">$3.200</span>
+                        <button class="drawer-remove">Eliminar</button>
                     </div>
                 </div>
-
             </div>
-        </section>
-
-        <div class="detalle-tabs">
-            <div class="tabs-nav">
-                <button class="tab-btn active" onclick="showTab('desc', this)">Descripción</button>
-                <button class="tab-btn" onclick="showTab('ficha', this)">Ficha técnica</button>
-                <button class="tab-btn" onclick="showTab('resenas', this)">Reseñas (128)</button>
+            <div class="drawer-footer">
+                <div class="drawer-resumen">
+                    <div class="resumen-row"><span>Subtotal</span><span>$3.200</span></div>
+                    <div class="resumen-row"><span>Envío</span><span class="texto-verde">Gratis</span></div>
+                    <div class="resumen-row total"><span>Total</span><span>$3.200</span></div>
+                </div>
+                <a href="carrito.html" class="btn btn-primary btn-full">Finalizar compra</a>
+                <p class="drawer-seguir" onclick="cerrarCarrito()">Seguir comprando</p>
             </div>
+        </aside>
 
-            <div id="tab-desc" class="tab-content">
-                <p>Los Pedigree DentaStix ayudan a limpiar los dientes de tu perro mientras él se divierte. Contienen
-                    minerales y vitaminas esenciales para la salud bucal.</p>
-                <ul class="tab-lista">
-                    <li>✔ Reduce el sarro hasta en un 80%</li>
-                    <li>✔ Sin colorantes artificiales</li>
-                    <li>✔ Apto para perros de 10 a 25 kg</li>
-                    <li>✔ Presentación: 7 unidades (200g)</li>
-                </ul>
-            </div>
-
-            <div id="tab-ficha" class="tab-content tab-hidden">
-                <table class="ficha-tabla">
-                    <tr class="ficha-fila">
-                        <td class="ficha-label">Marca</td>
-                        <td class="ficha-valor">Pedigree</td>
-                    </tr>
-                    <tr class="ficha-fila">
-                        <td class="ficha-label">Peso neto</td>
-                        <td class="ficha-valor">200g (7 unidades)</td>
-                    </tr>
-                    <tr class="ficha-fila">
-                        <td class="ficha-label">Raza objetivo</td>
-                        <td class="ficha-valor">Mediana (10-25 kg)</td>
-                    </tr>
-                    <tr>
-                        <td class="ficha-label">País de origen</td>
-                        <td class="ficha-valor">Argentina</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div id="tab-resenas" class="tab-content tab-hidden">
-                <div class="resenas-lista">
-                    <div class="resena-item">
-                        <div class="resena-header">
-                            <strong class="resena-autor">María G.</strong>
-                            <span class="texto-naranja">★★★★★</span>
+        <main>
+            <section class="detalle">
+                <div class="detalle-inner">
+                    <div class="detalle-imgs">
+                        <div class="img-principal">🦴</div>
+                        <div class="img-thumbs">
+                            <div class="thumb active">🦴</div>
+                            <div class="thumb">📦</div>
+                            <div class="thumb">🐶</div>
+                            <div class="thumb">📋</div>
                         </div>
-                        <p class="resena-texto">A mi perro le encantan. Noto que sus dientes están más limpios. ¡Muy
-                            recomendable!</p>
                     </div>
-                    <div class="resena-item resena-item--last">
-                        <div class="resena-header">
-                            <strong class="resena-autor">Juan P.</strong>
-                            <span class="texto-naranja">★★★★☆</span>
+
+                    <div class="detalle-info">
+                        <span class="detalle-marca">Pedigree</span>
+                        <h1 class="detalle-nombre">Snack dental para perros medianos</h1>
+                        <div class="detalle-stars">★★★★★ <span>(128 reseñas)</span></div>
+                        <div class="detalle-precio">
+                            <span class="precio-actual">$3.200</span>
+                            <span class="precio-viejo">$4.000</span>
+                            <span class="precio-desc">-20%</span>
                         </div>
-                        <p class="resena-texto">Buen producto, llega rápido y bien embalado.</p>
+                        <p class="detalle-desc">
+                            Los snacks dentales Pedigree están especialmente formulados para reducir la acumulación de
+                            sarro. Con forma especial para limpiar entre los dientes. Ideales para perros de razas
+                            medianas
+                            (10–25 kg).
+                        </p>
+                        <div>
+                            <p class="cantidad-label">Cantidad</p>
+                            <div class="cantidad-ctrl">
+                                <button>−</button>
+                                <input type="number" value="1" min="1" />
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <div class="detalle-btns">
+                            <button class="btn btn-primary">🛒 Agregar al carrito</button>
+                            <a href="carrito.html" class="btn btn-azul">Comprar ahora</a>
+                        </div>
+                        <div class="detalle-beneficios">
+                            <span>✅ Stock disponible</span>
+                            <span>🚚 Envío gratis a todo el país</span>
+                            <span>🔄 Devolución sin cargo en 30 días</span>
+                            <span>🔒 Compra 100% segura</span>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-    </main>
-
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-top">
-                <div class="footer-logo">Hue<span>llitas</span>
                 </div>
-                <div class="footer-social">
-                    <div class="social-btn"> <a href="#">f</a>
-                    </div>
-                    <div class="social-btn"> <a href="#">in</a>
-                    </div>
+            </section>
 
-                    <div class="social-btn"> <a href="#">ig</a>
-                    </div>
+            <div class="detalle-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" onclick="showTab('desc', this)">Descripción</button>
+                    <button class="tab-btn" onclick="showTab('ficha', this)">Ficha técnica</button>
+                    <button class="tab-btn" onclick="showTab('resenas', this)">Reseñas (128)</button>
                 </div>
-            </div>
-            <div class="footer-cols">
-                <div class="footer-col">
-                    <h4>Sobre nosotros</h4>
-                    <ul>
-                        <li><a href="#">Nuestra historia</a></li>
-                        <li><a href="#">Proveedores</a></li>
-                        <li><a href="#">Sucursales</a></li>
+
+                <div id="tab-desc" class="tab-content">
+                    <p>Los Pedigree DentaStix ayudan a limpiar los dientes de tu perro mientras él se divierte.
+                        Contienen
+                        minerales y vitaminas esenciales para la salud bucal.</p>
+                    <ul class="tab-lista">
+                        <li>✔ Reduce el sarro hasta en un 80%</li>
+                        <li>✔ Sin colorantes artificiales</li>
+                        <li>✔ Apto para perros de 10 a 25 kg</li>
+                        <li>✔ Presentación: 7 unidades (200g)</li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <ul>
-                        <li><a href="#">Email</a></li>
-                        <li><a href="#">Teléfono</a></li>
-                        <li><a href="#">WhatsApp</a></li>
-                    </ul>
+
+                <div id="tab-ficha" class="tab-content tab-hidden">
+                    <table class="ficha-tabla">
+                        <tr class="ficha-fila">
+                            <td class="ficha-label">Marca</td>
+                            <td class="ficha-valor">Pedigree</td>
+                        </tr>
+                        <tr class="ficha-fila">
+                            <td class="ficha-label">Peso neto</td>
+                            <td class="ficha-valor">200g (7 unidades)</td>
+                        </tr>
+                        <tr class="ficha-fila">
+                            <td class="ficha-label">Raza objetivo</td>
+                            <td class="ficha-valor">Mediana (10-25 kg)</td>
+                        </tr>
+                        <tr>
+                            <td class="ficha-label">País de origen</td>
+                            <td class="ficha-valor">Argentina</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="footer-col">
-                    <h4>Métodos de pago</h4>
-                    <div class="footer-pagos">
-                        <img src="fotos/visa.webp" alt="Visa" class="pago-img">
-                        <img src="fotos/master.svg" alt="Mastercard" class="pago-img">
-                        <img src="fotos/american.png" alt="American Express" class="pago-img">
+
+                <div id="tab-resenas" class="tab-content tab-hidden">
+                    <div class="resenas-lista">
+                        <div class="resena-item">
+                            <div class="resena-header">
+                                <strong class="resena-autor">María G.</strong>
+                                <span class="texto-naranja">★★★★★</span>
+                            </div>
+                            <p class="resena-texto">A mi perro le encantan. Noto que sus dientes están más limpios. ¡Muy
+                                recomendable!</p>
+                        </div>
+                        <div class="resena-item resena-item--last">
+                            <div class="resena-header">
+                                <strong class="resena-autor">Juan P.</strong>
+                                <span class="texto-naranja">★★★★☆</span>
+                            </div>
+                            <p class="resena-texto">Buen producto, llega rápido y bien embalado.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Huellitas — todos los derechos reservados</p>
-        </div>
-    </footer>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div class="footer-logo">Hue<span>llitas</span>
+                    </div>
+                    <div class="footer-social">
+                        <div class="social-btn"> <a href="#">f</a>
+                        </div>
+                        <div class="social-btn"> <a href="#">in</a>
+                        </div>
+
+                        <div class="social-btn"> <a href="#">ig</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <h4>Sobre nosotros</h4>
+                        <ul>
+                            <li><a href="#">Nuestra historia</a></li>
+                            <li><a href="#">Proveedores</a></li>
+                            <li><a href="#">Sucursales</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">Teléfono</a></li>
+                            <li><a href="#">WhatsApp</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Métodos de pago</h4>
+                        <div class="footer-pagos">
+                            <img src="fotos/visa.webp" alt="Visa" class="pago-img">
+                            <img src="fotos/master.svg" alt="Mastercard" class="pago-img">
+                            <img src="fotos/american.png" alt="American Express" class="pago-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Huellitas — todos los derechos reservados</p>
+            </div>
+        </footer>
 </body>
 
 </html>
