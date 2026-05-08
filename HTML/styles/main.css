@@ -346,3 +346,12 @@ h3 {
   object-fit: cover;
   display: block;
 }
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
