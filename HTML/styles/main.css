@@ -1265,6 +1265,6 @@ h3 {
   border: 1.5px solid var(--borde);
   border-radius: 6px;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.9rem
+  font-size: 0.9rem;
   transition: border-color 0.2s;
 }
