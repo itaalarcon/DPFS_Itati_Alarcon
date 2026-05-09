@@ -1268,3 +1268,30 @@ h3 {
   font-size: 0.9rem;
   transition: border-color 0.2s;
 }
+
+.form-group input:focus { border-color: var(--turquesa); }
+.form-group input.error { border-color: red; }
+
+.form-error {
+  font-size: 0.78rem;
+  color: red;
+  margin-top: 2px;
+  display: none;
+}
+
+.form-error.show {
+  display: block;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
