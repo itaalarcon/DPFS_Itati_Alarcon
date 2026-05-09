@@ -1047,3 +1047,41 @@ h3 {
   background-color: var(--azul-hover);
 }
 
+.detalle {
+  padding: 40px 20px;
+}
+
+
+.detalle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detalle-marca {
+  font-size: 0.8rem;
+  color: var(--gris);
+  text-transform: uppercase;
+}
+
+.detalle-nombre {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.detalle-stars {
+  color: var(--naranja);
+  font-size: 0.9rem;
+}
+
+.detalle-stars span {
+  color: var(--gris);
+  font-size: 0.82rem;
+}
+
+.detalle-precio {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
