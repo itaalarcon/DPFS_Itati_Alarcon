@@ -1085,3 +1085,25 @@ h3 {
   align-items: baseline;
   gap: 10px;
 }
+.precio-actual {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--azul);
+}
+
+.precio-viejo {
+  font-size: 1rem;
+  color: var(--gris);
+  text-decoration: line-through;
+}
+
+.precio-desc {
+  background-color: var(--verde);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
