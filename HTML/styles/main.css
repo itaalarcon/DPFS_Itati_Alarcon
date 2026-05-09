@@ -873,3 +873,40 @@ h3 {
   padding-top: 8px;
   margin-top: 4px;
 }
+
+.carrito-page {
+  padding: 30px 20px;
+}
+
+.carrito-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+}
+
+.carrito-tabla {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  overflow: hidden;
+}
+.tabla-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 40px;
+  padding: 14px 10px;
+  background-color: var(--fondo-gris);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--gris);
+  text-transform: uppercase;
+}
+
+.tabla-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 40px;
+  padding: 16px 20px;
+  align-items: center;
+  border-top: 1px solid var(--fondo-gris);
+}
