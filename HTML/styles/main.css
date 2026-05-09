@@ -531,3 +531,55 @@ h3 {
   padding: 3px;
   border-radius: 4px;
 }
+
+.prod-info {
+  padding: 14px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.prod-brand {
+  font-size: 0.75rem;
+  color: var(--gris);
+  text-transform: uppercase;
+}
+
+.prod-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.prod-stars {
+  color: var(--naranja);
+  font-size: 0.8rem;
+}
+
+.prod-precio {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--azul);
+  margin-top: auto;
+}
+
+.prod-precio-old {
+  font-size: 0.8rem;
+  color: var(--gris);
+  text-decoration: line-through;
+}
+
+.prod-actions {
+  padding: 0 14px 14px;
+  display: flex;
+  gap: 8px;
+}
+
+.prod-actions .btn {
+  flex: 1;
+  font-size: 0.82rem;
+  padding: 8px;
+  justify-content: center;
+}
