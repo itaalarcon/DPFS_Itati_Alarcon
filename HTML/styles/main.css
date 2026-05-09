@@ -1107,3 +1107,71 @@ h3 {
   padding: 3px 8px;
   border-radius: 4px;
 }
+.detalle-desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--gris);
+  border-top: 1px solid var(--borde);
+  padding-top: 16px;
+}
+
+.cantidad-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+.cantidad-ctrl {
+  align-items: center;
+  border: 1.5px solid var(--borde);
+  border-radius: 4px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.cantidad-ctrl button {
+  background-color: var(--fondo-gris);
+  border: none;
+  width: 36px;
+  height: 36px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.cantidad-ctrl button:hover {
+  background-color: var(--borde);
+}
+
+.cantidad-ctrl input {
+  width: 46px;
+  height: 36px;
+  border-left: 1px solid var(--borde);
+  border-right: 1px solid var(--borde);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  outline: none;
+}
+
+.detalle-btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.detalle-btns .btn {
+  flex: 1;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.detalle-beneficios {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--gris);
+  border-top: 1px solid var(--borde);
+  padding-top: 16px;
+}
