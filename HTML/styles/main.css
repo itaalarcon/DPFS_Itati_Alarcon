@@ -674,3 +674,23 @@ h3 {
   margin-top: 4px;
   justify-content: center;
 }
+
+.pago-img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+.pago-img:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 16px 0;
+  text-align: center;
+  font-size: 0.82rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
