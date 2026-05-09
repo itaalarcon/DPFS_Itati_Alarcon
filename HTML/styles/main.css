@@ -464,3 +464,20 @@ h3 {
   border: 1px solid transparent;
   transition: border-color 0.2s, background-color 0.2s;
 }
+.cat-card:hover {
+  border-color: var(--turquesa);
+  background-color: white;
+}
+
+.cat-icon-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 30%;
+  margin: 0 auto 8px;
+}
+
+.cat-card span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
