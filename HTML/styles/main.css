@@ -498,14 +498,14 @@ h3 {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   transition: all 0.2s;
 }
 
 .prod-card:hover {
-  box-shadow: 0 6px 20px rgba(26,83,161,0.12);
+  box-shadow: 0 6px 20px rgba(26, 83, 161, 0.12);
   transform: translateY(-3px);
 }
 
@@ -586,7 +586,7 @@ h3 {
 
 .footer {
   background-color: var(--texto);
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   padding: 30px 20px 0;
 }
 
@@ -600,7 +600,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 28px;
 }
 
@@ -623,7 +623,7 @@ h3 {
 .social-btn {
   width: 30px;
   height: 30px;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 60%;
   align-items: center;
   justify-content: center;
@@ -656,7 +656,7 @@ h3 {
 
 .footer-col ul li a {
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .footer-col ul li a:hover {
@@ -687,17 +687,18 @@ h3 {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 16px 0;
   text-align: center;
   font-size: 0.82rem;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .drawer-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 200;
   display: none;
 }
@@ -719,7 +720,7 @@ h3 {
   flex-direction: column;
   transform: translateX(100%);
   transition: transform 0.3s ease;
-  box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .cart-drawer.open {
@@ -888,9 +889,10 @@ h3 {
 .carrito-tabla {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   overflow: hidden;
 }
+
 .tabla-header {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 40px;
@@ -995,7 +997,7 @@ h3 {
 .resumen-card {
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   padding: 15px;
   position: sticky;
   top: 85px;
@@ -1085,6 +1087,7 @@ h3 {
   align-items: baseline;
   gap: 10px;
 }
+
 .precio-actual {
   font-family: 'Poppins', sans-serif;
   font-size: 1.9rem;
@@ -1107,6 +1110,7 @@ h3 {
   padding: 3px 8px;
   border-radius: 4px;
 }
+
 .detalle-desc {
   font-size: 0.95rem;
   line-height: 1.7;
@@ -1174,4 +1178,42 @@ h3 {
   color: var(--gris);
   border-top: 1px solid var(--borde);
   padding-top: 16px;
+}
+
+.detalle-tabs {
+  max-width: 1200px;
+  margin: 30px 0;
+  padding: 0 20px;
+}
+
+.tabs-nav {
+  display: flex;
+  border-bottom: 1px solid var(--borde);
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  color: var(--gris);
+  border-bottom: 2px solid transparent;
+}
+
+.tab-btn.active {
+  color: var(--azul);
+  border-bottom-color: var(--azul);
+}
+
+.tab-btn:hover {
+  color: var(--azul-hover);
+}
+
+.tab-content {
+  padding: 24px 0;
+  font-size: 0.95rem;
+  color: var(--gris);
 }
