@@ -910,3 +910,79 @@ h3 {
   align-items: center;
   border-top: 1px solid var(--fondo-gris);
 }
+
+.item-prod {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-img {
+  width: 41px;
+  height: 40px;
+  background-color: var(--fondo-gris);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem
+}
+
+.item-nombre {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.item-marca {
+  font-size: 0.78rem;
+  color: var(--gris);
+}
+
+.item-precio {
+  font-weight: 600;
+}
+
+.item-ctrl {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--borde);
+  border-radius: 8px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.item-ctrl button {
+  width: 28px;
+  height: 28px;
+  background-color: var(--fondo-gris);
+  border: none;
+}
+
+.item-ctrl span {
+  width: 34px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.88rem;
+  border-left: 1px solid var(--borde);
+  border-right: 1px solid var(--borde);
+  line-height: 28px;
+}
+
+.item-subtotal {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--azul);
+}
+
+.item-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--gris);
+  font-size: 1rem;
+}
+
+.item-delete:hover {
+  color: red;
+}
