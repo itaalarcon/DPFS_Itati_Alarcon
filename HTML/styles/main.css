@@ -444,3 +444,23 @@ h3 {
 #s3:checked ~ .carousel-dots label:nth-child(3) {
   background-color: white;
 }
+
+.categorias {
+  background-color: white;
+  padding: 40px 20px;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px;
+}
+
+.cat-card {
+  background-color: var(--fondo-gris);
+  padding: 20px 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: border-color 0.2s, background-color 0.2s;
+}
