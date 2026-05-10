@@ -234,6 +234,23 @@
             <p>© 2026 Huellitas — todos los derechos reservados</p>
         </div>
     </footer>
-    
+
+  <script>
+    function abrirCarrito() {
+      document.getElementById('overlay').classList.add('open');
+      document.getElementById('cartDrawer').classList.add('open');
+    }
+    function cerrarCarrito() {
+      document.getElementById('overlay').classList.remove('open');
+      document.getElementById('cartDrawer').classList.remove('open');
+    }
+    function showTab(tab, btn) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('tab-hidden'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('tab-' + tab).classList.remove('tab-hidden');
+      btn.classList.add('active');
+    }
+  </script>
+
 </body>
 </html>
