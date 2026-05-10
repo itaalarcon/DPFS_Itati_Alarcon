@@ -1295,3 +1295,55 @@ h3 {
   gap: 8px;
   margin-bottom: 16px;
 }
+.form-check input { width: auto; }
+
+.form-check label {
+  font-size: 0.82rem;
+  color: var(--gris);
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-link {
+  color: var(--azul);
+  text-decoration: underline;
+}
+
+.form-link:hover {
+  color: var(--azul-hover);
+}
+
+.form-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.form-divider span {
+  font-size: 0.8rem;
+  color: var(--gris);
+  white-space: nowrap;
+}
+
+.form-divider::before,
+.form-divider::after {
+  flex: 1;
+  height: 1px;
+  background-color: var(--borde);
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.85rem;
+  color: var(--gris);
+}
+
+.forgot-link {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: -6px;
+  margin-bottom: 11px;
+  color: var(--azul);
+}
+
