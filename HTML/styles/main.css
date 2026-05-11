@@ -449,8 +449,10 @@ h3 {
 .carousel-dots .dot {
   width: 10px;
   height: 10px;
+  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
+  display: block;
 }
 
 #s1:checked~.carousel-dots label:nth-child(1),
@@ -467,15 +469,16 @@ h3 {
 .cat-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 8px;
+  gap: 16px;
 }
 
 .cat-card {
   background-color: var(--fondo-gris);
   padding: 20px 10px;
+  border-radius: 10px;
   text-align: center;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   transition: border-color 0.2s, background-color 0.2s;
 }
 
@@ -487,6 +490,7 @@ h3 {
 .cat-icon-img {
   width: 80px;
   height: 80px;
+  object-fit: cover;
   border-radius: 30%;
   margin: 0 auto 8px;
 }
@@ -1075,13 +1079,14 @@ h3 {
   gap: 16px;
 }
 
-.detalle-inner { 
-  max-width: 1200px; 
+.detalle-inner {
+  max-width: 1200px;
   margin: 0 auto;
-   display: grid; 
-   grid-template-columns: 1fr 1fr; 
-   gap: 40px; 
-   align-items: start; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
 
 .detalle-marca {
   font-size: 0.8rem;
@@ -1240,17 +1245,20 @@ h3 {
   font-size: 0.95rem;
   color: var(--gris);
 }
+
 .form-page {
   min-height: calc(100vh - 65px);
   background-color: var(--fondo-gris);
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 30px 16px;
 }
 
 .form-card {
   background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   padding: 36px;
   width: 100%;
   max-width: 440px;
@@ -1293,13 +1301,18 @@ h3 {
   transition: border-color 0.2s;
 }
 
-.form-group input:focus { border-color: var(--turquesa); }
-.form-group input.error { border-color: red; }
+.form-group input:focus {
+  border-color: var(--turquesa);
+}
+
+.form-group input.error {
+  border-color: red;
+}
 
 .form-error {
   font-size: 0.78rem;
   color: red;
-  margin-top: 2px;
+  margin-top: 4px;
   display: none;
 }
 
@@ -1319,7 +1332,10 @@ h3 {
   gap: 8px;
   margin-bottom: 16px;
 }
-.form-check input { width: auto; }
+
+.form-check input {
+  width: auto;
+}
 
 .form-check label {
   font-size: 0.82rem;
@@ -1360,16 +1376,17 @@ h3 {
 
 .form-footer {
   text-align: center;
-  margin-top: 18px;
+  margin-top: 20px;
   font-size: 0.85rem;
   color: var(--gris);
 }
 
 .forgot-link {
   display: block;
+  text-align: right;
   font-size: 0.8rem;
-  margin-top: -6px;
-  margin-bottom: 11px;
+  margin-top: -8px;
+  margin-bottom: 14px;
   color: var(--azul);
+  text-decoration: underline;
 }
-
