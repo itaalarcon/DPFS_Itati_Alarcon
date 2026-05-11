@@ -128,6 +128,7 @@ h3 {
 
 .navbar {
   background-color: white;
+  border-bottom: 2px solid var(--fondo-gris);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -136,11 +137,11 @@ h3 {
 .navbar-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
   height: 65px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .nav-search {
@@ -153,6 +154,7 @@ h3 {
 
 .nav-search input {
   padding: 8px 16px;
+  flex: 1;
   border: none;
   outline: none;
   font-family: 'Roboto', sans-serif;
@@ -181,10 +183,10 @@ h3 {
 .nav-link {
   font-family: 'Poppins', sans-serif;
   font-size: 0.85rem;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--azul);
   padding: 6px 12px;
-  ;
+  border-radius: 6px;
 }
 
 .nav-link:hover {
@@ -192,17 +194,19 @@ h3 {
 }
 
 
-
 .nav-cart {
   background-color: var(--naranja);
   color: white;
   border-radius: 6px;
+  border: none;
   padding: 8px 16px;
   font-family: 'Poppins', sans-serif;
   font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
   align-items: center;
+  display: flex;
+  gap: 6px;
 }
 
 .nav-cart:hover {
