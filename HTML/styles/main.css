@@ -216,6 +216,8 @@ h3 {
 .cart-badge {
   background-color: var(--azul);
   color: white;
+  border-radius: 50%;
+  display: flex;
   width: 18px;
   height: 18px;
   font-size: 0.7rem;
@@ -241,9 +243,10 @@ h3 {
   background: none;
   border: none;
   font-size: 1.4rem;
-  cursor: pointe;
+  cursor: pointer;
   color: var(--azul);
   padding: 6px;
+  display: flex;
   align-items: center;
 }
 
@@ -267,7 +270,7 @@ h3 {
 
 .nav-dropdown a {
   display: block;
-  padding: 10px;
+  padding: 10px 16px;
   font-family: 'Poppins', sans-serif;
   font-size: 0.85rem;
   font-weight: 600;
@@ -286,11 +289,14 @@ h3 {
 .btn {
   display: inline-flex;
   align-items: center;
+  gap: 6px;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 6px;
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -322,6 +328,8 @@ h3 {
   border: 1px solid var(--gris-borde);
   font-size: 0.82rem;
   padding: 0.4rem 1rem;
+  background: none;
+  cursor: pointer;
 }
 
 .btn-vaciar:hover {
@@ -330,8 +338,9 @@ h3 {
 
 .btn-google {
   width: 100%;
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   padding: 10px;
   border: 1.5px solid var(--borde);
@@ -340,6 +349,7 @@ h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 0.88rem;
   font-weight: 600;
+  cursor: pointer;
   color: var(--texto);
 }
 
@@ -1000,9 +1010,9 @@ h3 {
 
 .resumen-card {
   background-color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-  padding: 15px;
+  padding: 20px;
   position: sticky;
   top: 85px;
 }
