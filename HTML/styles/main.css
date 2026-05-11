@@ -1622,3 +1622,112 @@ h3 {
   color: var(--azul);
   text-decoration: underline;
 }
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--azul);
+}
+
+/* Responsive (tablet)*/
+@media (max-width: 900px) {
+
+  .nav-search { display: none; }
+
+  .detalle-inner { grid-template-columns: 1fr; }
+
+  .carrito-inner { grid-template-columns: 1fr; }
+
+  .tabla-header { display: none; }
+
+  .tabla-item {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .tabla-item .item-prod {
+    grid-column: 1 / -1;
+  }
+
+  .resumen-card { position: static; }
+
+  .footer-cols { grid-template-columns: 1fr 1fr; }
+
+  .productos-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/*responsive*/
+@media (max-width: 600px) {
+
+  .nav-search  { display: none; }
+  .nav-link    { display: none; }
+  .hamburger   { display: block; }
+
+  .carousel-slide img { height: 180px; }
+
+  .cat-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .productos-grid { grid-template-columns: 1fr; }
+
+  .tabla-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 14px;
+  }
+
+  .cart-drawer { width: 100%; }
+
+  .newsletter {
+    border-radius: 0;
+    margin: 0 0 30px;
+  }
+
+  .newsletter-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter-texto { max-width: 100%; }
+
+  .newsletter-form { width: 100%; }
+
+  .newsletter-form input {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .footer-cols { grid-template-columns: 1fr; }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .form-card { padding: 24px 16px; }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  .img-principal {
+    height: 240px;
+    font-size: 4rem;
+  }
+
+  .detalle-nombre { font-size: 1.2rem; }
+
+  .precio-actual { font-size: 1.5rem; }
+
+  .detalle-btns { flex-direction: column; }
+
+  .detalle-btns .btn { min-width: 0; }
+
+  .tab-btn {
+    flex: 1;
+    padding: 10px 8px;
+    font-size: 0.78rem;
+    text-align: center;
+  }
+}
+
