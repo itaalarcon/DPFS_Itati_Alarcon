@@ -92,5 +92,44 @@
         </div>
     </main>
 
+    <script>
+    function validarRegistro(e) {
+      e.preventDefault();
+      let valido = true;
+
+      const campos = [
+        { id: 'nombre', err: 'err-nombre', check: v => v.trim().length > 0 },
+        { id: 'apellido', err: 'err-apellido', check: v => v.trim().length > 0 },
+        { id: 'email', err: 'err-email', check: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) },
+        { id: 'password', err: 'err-password', check: v => v.length >= 8 },
+        { id: 'confirm', err: 'err-confirm', check: v => v === document.getElementById('password').value },
+      ];
+
+      campos.forEach(({ id, err, check }) => {
+        const input = document.getElementById(id);
+        const errEl = document.getElementById(err);
+        if (!check(input.value)) {
+          input.classList.add('error');
+          errEl.classList.add('show');
+          valido = false;
+        } else {
+          input.classList.remove('error');
+          errEl.classList.remove('show');
+        }
+      });
+
+      const terminos = document.getElementById('terminos');
+      const errTerminos = document.getElementById('err-terminos');
+      if (!terminos.checked) {
+        errTerminos.classList.add('show');
+        valido = false;
+      } else {
+        errTerminos.classList.remove('show');
+      }
+
+      if (valido) alert('¡Cuenta creada con éxito! Bienvenido a Huellitas 🐾');
+    }
+  </script>
+
 </body>
 </html>
